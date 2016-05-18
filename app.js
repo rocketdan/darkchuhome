@@ -7,10 +7,10 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var mysql = require('mysql');
-var uuid = require('uuid');
+// var uuid = require('uuid');
 var fs = require('fs');
 var winston = require('winston'),
-	transports = []; // https://github.com/winstonjs/winston
+	transports = []; 
 var DailyRotateFile = require('winston-daily-rotate-file')
 var app = express();
 transports.push(new DailyRotateFile({
